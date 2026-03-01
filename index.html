@@ -1,40 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Xenoplay TV</title>
-<meta name="description" content="Download Xenoplay TV for Android. Smooth streaming and fast access.">
-
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="dark">
+<body>
 
-<!-- THEME TOGGLE -->
-<button id="themeToggle" class="toggle">☀️</button>
+<!-- SPLASH -->
+<div id="splash">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBe828iU7RYsPTuIt-emPJekg-7PmNWDcLDKUm2klH4Khk1wssBoGR3UJno8VH9yjDxYqKoh4pQqhW8vivRD0zFhDFMrKRHV5OVAIan44_Rw1ugCMP_jvkN2KMjwfxWMw2SOvYrEqTT0n0WSYpfi2gPMdjtwqsOGvxyi0JMLtQTpXq70CwkASKYDA_G79z/s320/ChatGPT%20Image%20Feb%2014,%202026,%2009_03_35%20PM.png=w352-h352-p-k-no-nu">
+</div>
 
-<div class="container">
+<div class="container hidden" id="main">
 
-  <!-- LOGO -->
-  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBe828iU7RYsPTuIt-emPJekg-7PmNWDcLDKUm2klH4Khk1wssBoGR3UJno8VH9yjDxYqKoh4pQqhW8vivRD0zFhDFMrKRHV5OVAIan44_Rw1ugCMP_jvkN2KMjwfxWMw2SOvYrEqTT0n0WSYpfi2gPMdjtwqsOGvxyi0JMLtQTpXq70CwkASKYDA_G79z/s320/ChatGPT%20Image%20Feb%2014,%202026,%2009_03_35%20PM.png=w352-h352-p-k-no-nu" class="logo">
+  <img class="logo" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBe828iU7RYsPTuIt-emPJekg-7PmNWDcLDKUm2klH4Khk1wssBoGR3UJno8VH9yjDxYqKoh4pQqhW8vivRD0zFhDFMrKRHV5OVAIan44_Rw1ugCMP_jvkN2KMjwfxWMw2SOvYrEqTT0n0WSYpfi2gPMdjtwqsOGvxyi0JMLtQTpXq70CwkASKYDA_G79z/s320/ChatGPT%20Image%20Feb%2014,%202026,%2009_03_35%20PM.png=w352-h352-p-k-no-nu">
 
-  <h1>Xenoplay TV</h1>
-  <p class="tagline">Stream smarter. Anywhere.</p>
+  <h1><b>Xenoplay TV</b></h1>
 
-  <!-- DESCRIPTION -->
-  <p class="desc">
-    Xenoplay TV is a modern streaming application designed for users who want quick access to live cricket, sports coverage, and entertainment channels directly on their Android devices. The platform brings together live matches, TV channels, and multiple categories in one smooth and easy-to-use interface.
-    <br><br>
-    Beyond sports, Xenoplay TV is also popular among audiences who enjoy dramas, serials, movies, and general entertainment content. With a lightweight design and optimized performance, the app delivers a seamless viewing experience even on mid-range devices.
-  </p>
-
-  <!-- DOWNLOAD -->
-  <button id="downloadBtn" class="download-btn">
+  <button class="download-btn" onclick="goDownload()">
     Download for Android
   </button>
 
+  <h3>About Xenoplay TV</h3>
+  <p class="desc">
+    <b>Xenoplay TV</b> is a modern streaming application designed for users who want quick access to live cricket, sports coverage, and entertainment channels directly on their Android devices. The platform brings together live matches, TV channels, and multiple categories in one smooth and easy-to-use interface.
+    <br><br>
+    Beyond sports, <b>Xenoplay TV</b> is also popular among audiences who enjoy dramas, serials, movies, and general entertainment content. With a lightweight design and optimized performance, the app delivers a seamless viewing experience even on mid-range devices.
+  </p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
   <p id="timerText" class="timer"></p>
 
   <!-- SERVERS -->
