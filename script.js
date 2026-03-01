@@ -1,34 +1,15 @@
-// DOWNLOAD TIMER
-const btn = document.getElementById("downloadBtn");
-const timerText = document.getElementById("timerText");
-const servers = document.getElementById("servers");
+// RANDOM SPLASH TIME
+const splash = document.getElementById("splash");
+const main = document.getElementById("main");
 
-btn.addEventListener("click", () => {
-  btn.disabled = true;
-  btn.style.opacity = "0.6";
+const delay = Math.random() * 1000 + 500;
 
-  let timeLeft = 10;
-  timerText.innerText = `Preparing download... ${timeLeft}s`;
+setTimeout(() => {
+  splash.style.display = "none";
+  main.classList.remove("hidden");
+}, delay);
 
-  const interval = setInterval(() => {
-    timeLeft--;
-    timerText.innerText = `Preparing download... ${timeLeft}s`;
-
-    if (timeLeft <= 0) {
-      clearInterval(interval);
-      timerText.innerText = "Download ready!";
-      servers.style.display = "block";
-    }
-  }, 1000);
-});
-
-// THEME TOGGLE
-const toggle = document.getElementById("themeToggle");
-const body = document.body;
-
-toggle.addEventListener("click", () => {
-  body.classList.toggle("dark");
-  body.classList.toggle("light");
-
-  toggle.textContent = body.classList.contains("dark") ? "☀️" : "🌙";
-});
+// GO DOWNLOAD PAGE
+function goDownload() {
+  window.location.href = "download.html";
+}
