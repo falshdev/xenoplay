@@ -1,15 +1,22 @@
-// RANDOM SPLASH TIME
-const splash = document.getElementById("splash");
-const main = document.getElementById("main");
+const btn = document.getElementById("downloadBtn");
+const timerText = document.getElementById("timerText");
+const servers = document.getElementById("servers");
 
-const delay = Math.random() * 1000 + 500;
+btn.addEventListener("click", () => {
+  btn.disabled = true;
+  btn.style.opacity = "0.6";
 
-setTimeout(() => {
-  splash.style.display = "none";
-  main.classList.remove("hidden");
-}, delay);
+  let timeLeft = 10;
+  timerText.innerText = `Preparing download... ${timeLeft}s`;
 
-// GO DOWNLOAD PAGE
-function goDownload() {
-  window.location.href = "download.html";
-}
+  const interval = setInterval(() => {
+    timeLeft--;
+    timerText.innerText = `Preparing download... ${timeLeft}s`;
+
+    if (timeLeft <= 0) {
+      clearInterval(interval);
+      timerText.innerText = "Download ready!";
+      servers.style.display = "block"; // FIXED
+    }
+  }, 1000);
+});
