@@ -1,74 +1,87 @@
 body {
-  font-family: system-ui, sans-serif;
-  background: #f6f8ff;
   margin: 0;
+  font-family: system-ui, sans-serif;
+  background: linear-gradient(180deg, #f4f7ff, #eef2ff);
   color: #111;
 }
 
-.container {
-  max-width: 420px;
+.wrap {
+  max-width: 460px;
   margin: auto;
   padding: 20px;
 }
 
-.logo {
-  width: 90px;
-  display: block;
-  margin: auto;
-  border-radius: 20px;
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,40,120,0.08);
+  margin-bottom: 18px;
 }
 
-h1, h2, h3 {
+.center {
   text-align: center;
 }
 
-.download-btn {
-  width: 100%;
-  padding: 15px;
-  margin: 15px 0;
-  border: none;
+.logo {
+  width: 90px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin: 6px 0;
+}
+
+.tag {
+  opacity: 0.6;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* BUTTON */
+.primary-btn {
+  display: inline-block;
+  padding: 14px 20px;
   border-radius: 10px;
   background: linear-gradient(45deg, #ff003c, #004cff);
   color: white;
-  font-size: 16px;
-}
-
-.desc {
-  line-height: 1.7;
-  font-size: 15px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 /* TABLE */
-.info-table {
+.info {
   width: 100%;
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
   margin: 15px 0;
+  border-collapse: collapse;
 }
 
-.info-table td {
+.info td {
   padding: 10px;
   border-bottom: 1px solid #eee;
 }
 
 /* SERVERS */
-.server-btn {
+.servers {
+  margin: 15px 0;
+}
+
+.server {
   display: block;
-  padding: 12px;
   background: #004cff;
   color: white;
-  text-align: center;
-  margin: 8px 0;
+  padding: 12px;
   border-radius: 8px;
   text-decoration: none;
+  margin-bottom: 8px;
 }
 
 /* NOTE */
 .note {
-  color: red;
   font-size: 13px;
-  margin-top: 15px;
+  color: #c40000;
+  line-height: 1.5;
 }
 
 /* INSTALL */
@@ -77,122 +90,10 @@ h1, h2, h3 {
   line-height: 1.6;
 }
 
-.copyright {
+/* FOOTER */
+.foot {
   text-align: center;
   font-size: 12px;
-  margin-top: 30px;
   opacity: 0.6;
-}
-
-/* SPLASH */
-#splash {
-  position: fixed;
-  inset: 0;
-  background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#splash img {
-  width: 120px;
-}
-
-.hidden {
-  display: none;
-}/* CONTAINER */
-.container {
-  max-width: 420px;
-  margin: auto;
-  padding: 70px 20px 40px;
-  text-align: center;
-}
-
-/* LOGO */
-.logo {
-  width: 95px;
-  border-radius: 22px;
-  margin-bottom: 15px;
-  box-shadow: 0 0 25px rgba(0,80,255,0.5);
-}
-
-/* TEXT */
-h1 {
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.tagline {
-  opacity: 0.7;
-  margin-bottom: 15px;
-}
-
-.desc {
-  font-size: 14px;
-  line-height: 1.6;
-  opacity: 0.75;
-  margin-bottom: 25px;
-}
-
-/* DOWNLOAD BUTTON */
-.download-btn {
-  width: 100%;
-  padding: 15px;
-  border-radius: 12px;
-  border: none;
-  font-weight: 600;
-  font-size: 16px;
-  cursor: pointer;
-  background: linear-gradient(135deg, #ff003c, #004cff);
-  color: white;
-}
-
-.download-btn:active {
-  transform: scale(0.96);
-}
-
-/* TIMER */
-.timer {
-  margin-top: 15px;
-  opacity: 0.7;
-  min-height: 18px;
-}
-
-/* SERVERS */
-.servers {
-  display: none;
   margin-top: 20px;
-}
-
-.server-title {
-  opacity: 0.6;
-  margin-bottom: 10px;
-}
-
-.server-btn {
-  display: block;
-  padding: 14px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  text-decoration: none;
-  background: rgba(255,255,255,0.08);
-  color: inherit;
-}
-
-/* FEATURES */
-.features {
-  margin-top: 25px;
-  font-size: 13px;
-  opacity: 0.75;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-}
-
-/* DISCLAIMER */
-.disclaimer {
-  font-size: 11px;
-  opacity: 0.5;
-  margin-top: 30px;
-  line-height: 1.5;
 }
