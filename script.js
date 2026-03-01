@@ -4,7 +4,7 @@ const servers = document.getElementById("servers");
 
 btn.addEventListener("click", () => {
   btn.disabled = true;
-  btn.style.opacity = "0.6";
+  btn.classList.add("clicked"); // fade effect
 
   let timeLeft = 10;
   timerText.innerText = `Preparing download... ${timeLeft}s`;
@@ -15,8 +15,8 @@ btn.addEventListener("click", () => {
 
     if (timeLeft <= 0) {
       clearInterval(interval);
-      timerText.innerText = "Download ready!";
-      servers.style.display = "block"; // FIXED
+      timerText.innerText = "Select a server below 👇";
+      servers.style.display = "block";
     }
   }, 1000);
 });
